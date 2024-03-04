@@ -46,6 +46,26 @@ h1 {
     color: white;
 }
 
+.btn1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -60px;
+    z-index: 2;
+    padding: 10px 20px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 60px;
+    z-index: 2;
+    padding: 10px 20px;
+}
+
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 2.5rem;
@@ -66,10 +86,21 @@ h1 {
     }
 }
 
-@media screen and (max-width: 568) {
+@media screen and (max-width: 600px) {
 
-    h1 {
-        font-size: 1rem;
+    .btn1,
+    .btn2 {
+        top: 95%;
+        left: 0;
+        width: 50%;
+        transform: translate(0, -50%);
+        margin: 0;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .btn2 {
+        left: 50%;
+        width: 50%;
     }
 }
-
