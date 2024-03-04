@@ -39,11 +39,26 @@ h1 {
 
 .center {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     color: white;
+}
+
+#homePageButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.btn {
+    z-index: 2;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -66,10 +81,44 @@ h1 {
     }
 }
 
-@media screen and (max-width: 568) {
+@media screen and (max-width: 600px) {
+    .btn {
+        left: 0;
+        width: 50%;
+        margin: 0;
+        z-index: 2;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-    h1 {
-        font-size: 1rem;
+    #homePageButtons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 60%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .btn {
+        left: 0;
+        width: 50%;
+        margin-top: -20px;
+        z-index: 2;
+        text-align: center;
+    }
+
+    #homePageButtons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 90%;
+    }
+
+}
+
+
 
