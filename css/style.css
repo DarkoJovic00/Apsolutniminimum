@@ -15,11 +15,6 @@
     margin: 0;
 }
 
-.header {
-    height: 50px;
-    text-align: center;
-}
-
 h1 {
     color: white;
     z-index: 2;
@@ -120,5 +115,47 @@ h1 {
 
 }
 
+nav {
+    width: 100%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 10px;
+}
 
+.logo {
+    display: inline-block;
+}
 
+.nav-links {
+    list-style: none;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: darkgreen;
+}
+
+.logo img {
+    width: 175px;
+    vertical-align: middle;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    color: black;
+}
